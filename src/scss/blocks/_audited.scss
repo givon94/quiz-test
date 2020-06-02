@@ -1,0 +1,143 @@
+.audited {
+  background: #f8fbff;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  &-title {
+    margin-bottom: 40px;
+  }
+  &_block {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    padding: 50px 10px;
+    //padding: 40px;
+    &-wrapper {
+      position: relative;
+      max-width: 1050px;
+      //padding: 0 15px 15px;
+      margin: 0 auto;
+      //&:before {
+      //  content: '';
+      //  position: absolute;
+      //  top: 15px;
+      //  left: 0;
+      //  right: 0;
+      //  bottom: 0;
+      //  background: #fff;
+      //  border-radius: 10px;
+      //  box-shadow: 0 3px 20px rgba(0,0,0,.16);
+      //  z-index: -1;
+      //}
+    }
+    &-subtitle {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+    &-items {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      margin: -25px;
+      //margin: -40px;
+    }
+    &-btn {
+      display: block;
+      width: auto;
+      height: auto;
+      font-size: 20px;
+      //font-size: 24px;
+      font-weight: 400;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      padding: 10px 20px;
+      //padding: 10px 45px;
+      margin: 40px auto 0;
+      &>span {
+        display: block;
+        font-size: 14px;
+        //font-size: 18px;
+        font-weight: 300;
+      }
+    }
+  }
+  &__item {
+    text-align: center;
+    margin: 25px;
+    //margin: 40px;
+    &-img {
+      margin: 0 auto;
+    }
+    &-title {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+}
+
+
+//- Small
+@media (min-width: 600px) {
+  .audited {
+    &_block {
+      padding: 40px;
+      &-wrapper {
+        padding: 0 15px 15px;
+        z-index: 1;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 15px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: #fff;
+          border-radius: 10px;
+          box-shadow: 0 3px 20px rgba(0,0,0,.16);
+          z-index: -1;
+        }
+      }
+      &-btn {
+        font-size: 24px;
+        padding: 10px 45px;
+        &>span {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+
+//- Medium
+@media (min-width: 900px) {
+  .audited {
+    &_block {
+      &-items {
+        margin: -35px;
+      }
+    }
+    &__item {
+      margin: 35px;
+    }
+  }
+}
+
+
+//- Large
+@media (min-width: 900px) {
+  .audited {
+    background: transparent;
+    &_block {
+      &-items {
+        margin: -40px;
+      }
+    }
+    &__item {
+      margin: 40px;
+    }
+  }
+}

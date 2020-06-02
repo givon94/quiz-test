@@ -1,0 +1,48 @@
+include common/_variables
+include common/_mixins
+include common/_svg
+include blocks/_quiz
+
+doctype html
+html(lang='ru-RU')
+    head
+        +meta-header
+        //- SEO
+        block title-description
+            title= pageTitle
+            meta(name='title', content= pageTitle)
+            meta(name='description', content= pageDescription)
+
+        //- Open Graph
+        //-block open-graph
+            +open-graph(pageTitle, pageDescription, 'index.html')
+        +Manifest
+        //-+Pragma-copyright
+        +favicon
+        +android-color
+        //-+GTM-header
+
+
+        +style-main
+        +css('css/header.css?v=1.0.0')
+
+
+
+    body
+        +ifIE
+        //-+GTM-body
+
+        block content
+        block header
+        main
+            block main
+        block footer
+
+
+
+        //-#toTop
+            +top
+            p Наверх
+
+
+        script(async='', src='js/build.js?v=1.0.0')

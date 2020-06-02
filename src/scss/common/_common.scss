@@ -1,0 +1,190 @@
+html, body {
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #292929;
+  height: 100%;
+}
+
+
+@-ms-viewport {
+  width: device-width;
+}
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+section {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+
+button {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+sup {
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  display: block;
+}
+
+.blue {
+  color: #2A76FD;
+}
+
+
+.logo-viber {
+  transform: translateY(2px);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  &-divider {
+    position: relative;
+    padding-bottom: 30px;
+    &:before {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='14'%3E%3Cg fill='%232a76fd'%3E%3Cpath d='M34 0a7 7 0 11-7 7 7 7 0 017-7z'%3E%3C/path%3E%3Cpath d='M51 0a5 5 0 11-5 5 5 5 0 015-5z'%3E%3C/path%3E%3Cpath d='M64.5 0A3.5 3.5 0 1161 3.5 3.5 3.5 0 0164.5 0z'%3E%3C/path%3E%3Cpath d='M17 0a5 5 0 11-5 5 5 5 0 015-5z'%3E%3C/path%3E%3Cpath d='M3.5 0A3.5 3.5 0 110 3.5 3.5 3.5 0 013.5 0z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+
+
+
+.scroll-hidden {
+  overflow: hidden;
+}
+
+//-Тень псевдоэлемент
+.shadow-top {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background-size: contain;
+    z-index: 10;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9MAAAAPBAMAAAAVN4G/AAAAJ1BMVEUAAAA3Nzc3Nzc3Nzc3Nzc2NjY1NTUzMzMdHR0eHh4lJSUqKiogICAWqjq/AAAADXRSTlMABQoSDhUYHDQwJSAsVfPYMAAAAYtJREFUWMPt1tFtgzAQBmB7A64bgLJByAKBDSK6QWED8pAFyAaJlAlo3yuVCVplqBpkJFv2EbChQOovErGCIsD/+TBxHMeZCXB8OCuPEAoccaxQWCGPuvAxMLlgGJiYR/4LCqZeggUDM0+3/EG21jjN+CB7rgUPDwRj2MSz2gf2/FVGP9ZKjQ2F/HsribZaYaT/WfuvvywJf6G9ngJBcrUMU5j7VRFLhD1EGPcRPAAaHvXI5GjPYJt6xiIM2cheIkPOWTugF7TXzsnQbjBh6lRMV453o7wzo7asUbtDfUiMpYgsz46TyFNUYoTXUK+CiWKZ0vL9ERo8cMheCAuyfgw0ydd0ADbFQninqttXyT61ckzvTFl1+exXFqbloi+IaKtm7wfD9nNUbMzyQmV2VuFlOYsOISQm+GgO92435jqZW3OJ1h33U+oIBaFIjbyhb5KY5y/t8agSL0+Wx6kmOLA3nhjsVNUoGTnI76vszFyKohlfioU6C/fL6WqFU0rgaCjv1SbavdGeR+/9AkpDqC8Uo6CHAAAAAElFTkSuQmCC") no-repeat center center;
+  }
+}
+
+.shadow-bottom {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background-size: contain;
+    z-index: 10;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9MAAAAPBAMAAAAVN4G/AAAAJFBMVEUAAAA3Nzc3Nzc3Nzc3Nzc2NjYzMzM1NTUdHR0fHx8kJCQpKSnFA7ALAAAADHRSTlMABQoSDhUcGDMuJiFAwF79AAABqUlEQVRYw+3UwW2DMBQGYLyBHxvwlA2cLABvgwh1g3DoubBCu0HTDUrvHMJydRyMAzEmIY7S0HwSCIGQpff/dsAAACUiEkKs0r2XoivfePNaK7tS2/a8z8DH5/ZE2aoPNpNlhUOqCWVJMUoRAA+OMZBCPKCDRGir9MRLYZPtFT15NtyY2tiVVt/bST6GbL34UsoBP7VWbSR1M4pczehCb2mXaJEgBZUIFBacARpoLMgQfaYNa9MJdzHcMnOYVFJzJLxWVe1U/pR+1GXtVEn12HYblzqJ/XUiEaShFoXQ4MFUjEELQzy2aNI3Et2wQau1asRkcjrWxuRZvvHPHV862VroEN0S6sKOCFos8IoBBwatEAeQFFOPaCxJeJB2db/5sx5dcDo9E7KIcRgYHLg1Yv+xnwhxDI0S2lI8lEQYtG/0OXAE2DAe3A8MC/ECNJGea3/4VsvE/tr6F10nxgtE4BL8QTACfVjQXcV4vQjcePBw4Gwhzk4ExvyidWHQNZMagNODnco3AjfnITR/Zrd1vWDwgDgD6V9t1tuAhnq8M67K+Az26enprn4BfLCS7HoG+MoAAAAASUVORK5CYII=") no-repeat center center;
+  }
+}
+
+
+
+//- Small
+@media (min-width: 600px) {
+  section {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .section {
+    &-title {
+      font-size: 36px;
+    }
+  }
+}
+
+
+
+//- Medium
+@media (min-width: 900px) {
+  .section {
+    &-title {
+      font-size: 38px;
+    }
+  }
+}
+
+
+
+
+

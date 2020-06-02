@@ -1,0 +1,93 @@
+.top-bar {
+  min-width: 320px;
+  position: relative;
+  z-index: 1000;
+  top: 0;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.14);
+  background-color: #fff;
+  padding: 10px 0;
+  &-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: space-around;
+    margin: 5px 0;
+    & svg {
+      margin: 0 5px;
+    }
+  }
+  &__phones {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    &>a {
+      color: #555;
+      &:hover {
+        color: #7f7f7f;
+      }
+    }
+  }
+  &-form {
+    display: none;
+  }
+}
+
+//.icon-telegram {
+//  margin-right: 5px;
+//}
+
+
+
+//- Small
+@media (min-width: 600px) {
+  .top-bar {
+    &-content {
+      max-width: 690px;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+//- Medium
+@media (min-width: 900px) {
+  .top-bar {
+    position: fixed;
+    width: 100%;
+    padding: 5px 0;
+    &-content {
+      max-width: 1065px;
+    }
+    &__phones {
+      font-size: 18px;
+    }
+    &-form {
+      display: flex;
+      &-phone {
+        width: 210px;
+      }
+      &-btn {
+        width: 216px;
+        height: 46px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+//- Large
+@media (min-width: 1200px) {
+  .top-bar {
+    &__phones {
+      font-size: 20px;
+    }
+  }
+}
+

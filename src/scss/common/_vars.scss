@@ -1,0 +1,62 @@
+//-Размер шрифта для заголовков
+$m-section-title-size: 22px;
+
+//-Паддинги, марджины для секций
+$padding-section: 40px 0;
+$margin-section: 40px 0;
+
+//-Паддинги для секции в адаптиве
+$m-padding: 15px 0;
+$med-padding: 30px 0;
+
+//-Паддинги для формы
+$form-m-padding: 30px 15px 35px;
+
+
+
+
+//- @media breakpoints:
+$sm: 575px;
+$min-sm: 576px;
+$max-sm: 767px;
+$min-md: 768px;
+$max-md: 991px;
+$min-lg: 992px;
+$max-lg: 1199px;
+
+
+////- Extra small
+//@media (max-width: 599px) {
+//
+//}
+
+
+////- Small
+//@media (min-width: 600px) {
+//
+//}
+
+
+
+////- Medium
+//@media (min-width: 900px) {
+//
+//}
+
+
+
+////- Large
+//@media (min-width: 1200px) {
+//
+//}
+
+
+////- Super Large
+//@media (min-width: 1800px) {
+//
+//}
+
+
+////-Для IE
+//@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+//}
